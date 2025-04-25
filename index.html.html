@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2MAR - Cosmétique de Luxe à l'Or 24K</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {font-family: sans-serif;background: #FFF9F2;color: #3C2A1E;text-align: center;margin:0;padding:0;}
+        header,footer {background:#D5B47F;padding:15px;}
+        nav ul {list-style:none;padding:0;}
+        nav ul li {display:inline-block;margin:0 10px;}
+        a {text-decoration:none;color:#3C2A1E;font-weight:bold;}
+        .cta, .btn-cta {background:#A07D45;padding:8px 15px;color:#FFF;border-radius:20px;}
+        .hero {padding:40px;}
+        .produit img {width:250px;height:250px;object-fit:cover;border-radius:10px;}
+        .produit {margin:20px auto;}
+        .prix {color:#A07D45;font-weight:bold;}
+        .popup {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);display:none;justify-content:center;align-items:center;}
+        .popup-content {background:#fff;padding:30px;border-radius:10px;position:relative;}
+        .close-btn {position:absolute;top:10px;right:15px;font-size:20px;cursor:pointer;}
+        input[type="email"], button {padding:10px;margin:10px;width:80%;border-radius:20px;border:1px solid #ccc;}
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">V2MAR</div>
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#paiement" class="cta">Acheter</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>V2MAR - L'Alchimie Ultime de la Beauté</h1>
+    <p>L'or 24K rencontre la science cosmétique pour révéler votre éclat</p>
+    <a href="#produits" class="btn-cta">Découvrir</a>
+</section>
+
+<section class="produits" id="produits">
+    <h2>Nos Produits Best-Sellers</h2>
+    <div class="produit">
+        <img src="eyes on me.png" alt="Eyes On Me">
+        <h3>Eyes On Me</h3><p>Extensions longue-tenue, regard intense</p><span class="prix">19.97€</span>
+    </div>
+    <div class="produit">
+        <img src="first met.png" alt="First Meet">
+        <h3>First Meet</h3><p>"Natural glam", raffinement quotidien</p><span class="prix">19.97€</span>
+    </div>
+    <div class="produit">
+        <img src="ChatGPT Image 14 avr. 2025, 21_32_26.png" alt="Masque Régénérant 24K">
+        <h3>Masque Régénérant 24K</h3><p>Anti-âge intensif or pur 24K</p><span class="prix">79.99€</span>
+    </div>
+</section>
+
+<section id="apropos">
+    <h2>À propos de V2MAR</h2>
+    <p>Chez V2MAR, nous repoussons les limites en fusionnant l'or 24K à la science cosmétique.</p>
+    <p><strong>Signature :</strong> Technologie Or, Science Precision, Rituel Luxe.</p>
+    <p><strong>Excellence :</strong> Pure Performance, Éthique Luxe, Innovation.</p>
+    <em>« V2MAR ne suit pas les tendances - nous les créons. Parce que votre beauté mérite l'exception. »</em>
+</section>
+
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <form><input type="email" placeholder="Votre Email"><button>Envoyer</button></form>
+</section>
+
+<section id="paiement">
+    <h2>Paiement Sécurisé</h2>
+    <p>Payer par carte ou PayPal</p>
+    <button>Paiement Carte</button>
+    <button>PayPal</button>
+</section>
+
+<footer>©2025 V2MAR - Tous droits réservés</footer>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h3>Inscrivez-vous et obtenez -10%</h3>
+        <input type="email" placeholder="Votre email"><button>S'inscrire</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        setTimeout(()=>document.getElementById('popup').style.display='flex',3000);
+        document.querySelector('.close-btn').onclick=()=>document.getElementById('popup').style.display='none';
+    });
+</script>
+</body>
+</html>

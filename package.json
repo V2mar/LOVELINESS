@@ -1,20 +1,25 @@
-"dependencies" {
-  "next": "^14.1.0",
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
-  "tailwindcss": "^3.4.0"
-<<<<<<< HEAD
-  }
-=======
-}
->>>>>>> 3e3abb967f535c61c6352bad8700007bd0e2b5c7
-
-"bashnpm install"{
-  "name": "name",
-  "description": "description",
-  "authors": "author",
+{
+  "name": "loveliness",
   "version": "1.0.0",
-  "main": "pathToMain",
- 
-"bash"}
+  "description": "Site e-commerce de la marque V2MAR – Loveliness",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "authors": "V2mar",
+  "dependencies": {
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "typescript": "^5.2.0"
+  }
+}
+
 

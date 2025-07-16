@@ -1,7 +1,7 @@
 {
   "name": "loveliness",
   "version": "1.0.0",
-  "description": "Site e-commerce de la marque V2MAR – Loveliness",
+  "description": "Site e-commerce de la marque V2MAR - Loveliness",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -21,5 +21,6 @@
     "typescript": "^5.2.0"
   }
 }
+
 
 

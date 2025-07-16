@@ -1,4 +1,4 @@
-// File: C:\Users\ACER\Desktop\lokit\app\layout.tsx
+// File: C:\Users\ACER\Desktop\lokit\LOVELINESS\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
